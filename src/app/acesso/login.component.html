@@ -1,0 +1,30 @@
+<table width="90%">
+    <tr align="center">
+        <td>
+            <div id="container">
+                <div id="content">
+                    <div>
+                        <div id="logomarca">
+
+                        </div>
+                        <div>
+                            <mat-form-field class="example-full-width" id="input_login">
+                                <input matInput placeholder="Login" [(ngModel)]="user.usuario">
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <mat-form-field class="example-full-width" id="input_login">
+                                <input type="password" matInput placeholder="Senha" [(ngModel)]="user.password">
+                            </mat-form-field>
+                        </div>
+
+                        <div style="padding:20px">
+                            <button id="btn_login" (click)="doAcesso()"  mat-button class="btn-form">Entrar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>

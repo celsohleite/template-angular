@@ -1,0 +1,56 @@
+<div id="container-usuario">
+    <div id="content">
+        <table class="table-form">
+            <tr>
+                <td>
+                    <div class="title-form">
+                            Novo Cliente
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width input-form input-color">
+                            <input matInput placeholder="Nome Completo" [(ngModel)]="cliente.nome_cliente" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form ">
+                            <input matInput placeholder="CPF"  [(ngModel)]="cpf" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="E-mail" [(ngModel)]="cliente.email" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="Telefone"  [(ngModel)]="cliente.telefone"  value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="Celular"  [(ngModel)]="cliente.celular" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="Confirmar Senha" type="password" value="">
+                        </mat-form-field>
+                    </div>          
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div>
+                        <button mat-button class="btn-form">Salvar</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

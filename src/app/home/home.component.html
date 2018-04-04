@@ -1,0 +1,66 @@
+<mat-toolbar id="toolbar">
+    <span>My Application</span>
+</mat-toolbar>
+
+<div id="menu">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Menu
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+
+            <mat-list>
+                <h3 mat-subheader>Cadastro</h3>
+
+                <mat-list-item *ngFor="let cadastro of cadastros">
+                    <mat-icon mat-list-icon>{{cadastro.icon}}</mat-icon>
+                    <a routerLink="{{cadastro.link}}">
+                        <span mat-line>{{cadastro.name}}</span>
+                    </a>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+
+                <!--
+                <mat-divider></mat-divider>
+                <h3 mat-subheader>Notes</h3>
+                <mat-list-item *ngFor="let note of notes">
+                    <mat-icon mat-list-icon>note</mat-icon>
+                    <h4 mat-line>{{note.name}}</h4>
+
+                </mat-list-item>
+            -->
+            </mat-list>
+
+        </mat-expansion-panel>
+
+        <!--
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Configuração
+                </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-list>
+                <h3 mat-subheader>Folders</h3>
+                <mat-list-item *ngFor="let folder of folders">
+                    <mat-icon mat-list-icon>folder</mat-icon>
+                    <h4 mat-line>{{folder.name}}</h4>
+
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <h3 mat-subheader>Notes</h3>
+                <mat-list-item *ngFor="let note of notes">
+                    <mat-icon mat-list-icon>note</mat-icon>
+                    <h4 mat-line>{{note.name}}</h4>
+
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    -->
+    </mat-accordion>
+</div>
+<router-outlet></router-outlet>

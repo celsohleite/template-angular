@@ -1,0 +1,43 @@
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 'warn';
+  }
+
+  #toolbar{
+      background-color: rgb(221, 127, 91);
+      box-shadow: 4px 4px 8px rgb(160,160,160);
+  }
+
+  a{
+    font-weight: unset;
+    color: rgb(134, 141, 145);
+    font-size: 16px;    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+  }
+
+  mat-icon{
+    color: rgb(129, 131, 133);
+  }
+  
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  #menu{
+      width: 250px;
+      padding: 10px;
+  }
+
+  #item_menu{
+    width: 220px;
+  }

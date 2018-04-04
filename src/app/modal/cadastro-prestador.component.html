@@ -1,0 +1,60 @@
+<div id="container-usuario">
+    <div id="content">
+        <table class="table-form">
+            <tr>
+                <td>
+                    <div class="title-form">
+                        Novo Prestador
+                    </div>
+                    <div>
+                        <mat-form-field class="example-full-width input-form input-color">
+                            <input matInput placeholder="Nome Prestador" [(ngModel)]="prestador.nome_prestador" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form ">
+                            <input matInput placeholder="Serviço" [(ngModel)]="prestador.servico" value="">
+                        </mat-form-field>
+                    </div>
+
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="E-mail" [(ngModel)]="prestador.email" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="CPF/CNPJ" [(ngModel)]="prestador.cpf_cnpj" value="">
+                        </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="Telefone" [(ngModel)]="prestador.telefone" value="">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width input-form">
+                            <input matInput placeholder="Celular" [(ngModel)]="prestador.celular" value="">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-radio-group>
+                            <mat-radio-button value="1">Ativa</mat-radio-button>
+                            <mat-radio-button value="2">Inativa</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div style="padding:20px">
+                        <button mat-button class="btn-form">Salvar</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
